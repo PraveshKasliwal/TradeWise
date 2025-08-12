@@ -16,7 +16,7 @@ const userRoutes = require('./routes/userRoutes');
 const buyRoutes = require('./routes/BuyRoutes');
 const watchlistRoutes = require('./routes/watchlistRoutes');
 
-const subscribeStockHandler = require('./socketHandler/stockSubscription');
+const subscribeStockHandler = require('./SocketHandler/subscribeStockHandler');
 const WatchlistSocketHandler = require('./SocketHandler/WatchlistSocketHandler');
 const WalletSocketHandler = require('./SocketHandler/WalletSocketHandler');
 
