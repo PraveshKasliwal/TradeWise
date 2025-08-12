@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Card, Text, Flex, LoadingOverlay } from '@mantine/core';
-import PortfolioSummaryItemCard from './PortfolioSUmmaryItemCard';
+import PortfolioSummaryItemCard from './PortfolioSummaryItemCard';
 import styles from './PortfolioSummary.module.css';
 
 const PortfolioSummary = ({ portfolio }) => {
