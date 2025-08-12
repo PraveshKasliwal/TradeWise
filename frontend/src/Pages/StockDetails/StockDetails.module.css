@@ -1,0 +1,62 @@
+.stockDetailsPage {
+  display: flex;
+}
+
+.stockDetailsContainer {
+    width: 70%;
+    padding: 30px;
+}
+
+.stockDetailsPriceContainer{
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.stockPrice{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.stockChange{
+    font-size: 15px;
+}
+
+.positive{
+    color: lightgreen;
+}
+
+.negative{
+    color: salmon;
+}
+
+.stockPerformanceContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stockDetailWishlistButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    border: 1px solid #e9e9eb;
+}
+
+.stockDetailWishlistImage{
+    width: 17px;
+    height: 17px;
+}
+
+.stockDetailWishlistButton img{
+    width: 17px;
+    height: 17px;
+}
+
+/* .portfolioSummary{
+
+} */

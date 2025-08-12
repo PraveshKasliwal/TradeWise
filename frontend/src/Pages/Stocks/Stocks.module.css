@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainPage {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.mainPageInner {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchSection {
+    text-align: center;
+    /* margin-bottom: 40px; */
+}
+
+.searchResult {
+    /* margin-top: 20px; */
+    background: #363636;
+    padding: 20px;
+    width: calc(100vw - 330px);
+    min-height: 200px;
+    max-height: 200px;
+    position: absolute;
+    top: 58px;
+    z-index: 1;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+}
+
+.stocksSuggestionContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 0 15px 0px;
+    color: white;
+}
+
+.stockCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+.niftyContainer {
+  /* width: 100%; */
+  width: calc(100vw - 330px);
+  display: flex;
+  gap: 16px;
+  overflow: scroll;
+  border-radius: 15px;
+  /* flex-wrap: wrap; */
+}
+
+.niftyContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.niftyCard {
+    display: flex;
+    gap: 8px;
+    /* width: max-content; */
+    height: 35px;
+    padding: 8px 10px 8px 10px;
+    background-color: #363636;
+    border-radius: 15px;
+    color: white;
+}
+
+.niftyCard div {
+    font-size: 13px;
+    text-transform: uppercase;
+    /* width: max-content; */
+}
+
+.niftyCardName,
+.niftyCardChange {
+    font-weight: 500;
+    width: max-content;
+}
+
+.niftyCardPositive {
+    color: lightgreen;
+}
+
+.niftyCardNegative {
+    color: salmon;
+}
+
+.searchCard{
+    display: flex;
+    gap: 8px;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: fit-content;
+    /* width: max-content; */
+    height: fit-content;
+    padding: 8px 10px 8px 10px;
+    color: white;
+    border-radius: 6px;
+}
+.searchCard:hover{
+    background-color: #595858;
+}
+
+.searchTextEllipsis {
+  max-width: 100%; /* Adjust width as needed */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.textInputInput{
+    background-color: #363636 !important;
+    border: none !important;
+    color: #adadad !important;
+    height: 50px !important;
+    padding-left: 50px !important;
+}
+
+.textAreaSection{
+    width: 50px !important;
+}
+
+.accordionControl{
+    border: none !important;
+    box-shadow: none !important;
+    transition: none !important;
+    background-color: #363636 !important;
+    border-radius: 15px !important; 
+    height: 55px !important;
+}
+
+.accordionItem{
+    border: none !important;
+    border-radius: 15px !important;
+    background-color: #363636 !important;
+}
+.accordionLabel{
+    border-radius: 15px !important;
+}
+.accordionPanel{
+    border-radius: 15px !important;
+}
+
+.watchListTable{
+    height: 70px !important;
+}
+
+.watchListTableNameRow{
+    max-width: 200px !important;
+    /* white-space:; */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}

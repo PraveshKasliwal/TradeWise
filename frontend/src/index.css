@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainPage {
+    padding: 20px 40px 20px 20px;
+    background-color: #1a1a1a;
+    /*width: 100vw; */
+    min-height: 100vh;
+}
+
+.sidePage{
+    /* width: calc(100%-250px); */
+    /* position: relative;
+    left: 250px;
+    top: 0; */
+    margin-left: 250px;
+}
+
+.stock-card {
+    /* border: 1px solid #ddd; */
+    padding: 16px;
+    width: 180px;
+    height: 165px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    color: white;
+    background-color: #2a2a2a;
+}
+
+.stock-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.stock-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.stock-card-img-name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stock-card-image-container {
+    height: 30px;
+    width: 30px;
+    border: black solid 1px;
+}
+
+.stock-card-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.stock-card-price-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.stock-card-price {
+    font-size: 12px;
+}
+
+.stock-card-change {
+    font-size: 11px;
+}
+
+.stock-card .positive {
+    color: lightgreen;
+}
+
+.stock-card .negative {
+    color: salmon;
+}
+
+.stock-cart-wishlist-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.stock-cart-wishlist-btn:hover {
+    transform: scale(1.2);
+}
+
+.niftyCard {
+    display: flex;
+    width: 300px;
+}
+
+.stock-container {
+    border: 1px solid white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* .stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+.stock-table th,
+.stock-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.stock-table th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+} */
+
+.positive {
+    color: lightgreen;
+    /* margin-left: 8px; */
+}
+
+.negative {
+    color: salmon;
+    /* margin-left: 8px; */
+}
+
+.wishlist-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wishlist-button img {
+    width: 24px;
+    height: 24px;
+}
