@@ -22,20 +22,31 @@ const WalletSocketHandler = require('./SocketHandler/WalletSocketHandler');
 
 const app = express();
 const server = http.createServer(app); // wrap app with HTTP server
+
+// Middleware
+app.use(express.json());
+app.use(cors({
+  origin: [
+    "http://localhost:3000",                // local dev
+    "https://trade-wise-frontend-qayqp6xt9-praveshkasliwals-projects.vercel.app"      // production
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 const io = new Server(server, {
   cors: {
-    origin: "*", // or your frontend origin
-    methods: ["GET", "POST"]
+    origin: [
+      "http://localhost:5173",
+      "https://trade-wise-frontend-qayqp6xt9-praveshkasliwals-projects.vercel.app"
+    ],
+    methods: ["GET", "POST"],
+    credentials: true
   }
 });
 
 // Export io globally to use in controllers
 global._io = io;
-
-// Middleware
-app.use(express.json());
-app.use(cors());
-
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
