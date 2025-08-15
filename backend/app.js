@@ -27,8 +27,7 @@ const server = http.createServer(app); // wrap app with HTTP server
 app.use(express.json());
 app.use(cors({
   origin: [
-    "http://localhost:3000",                // local dev
-    "https://trade-wise-frontend-qayqp6xt9-praveshkasliwals-projects.vercel.app"      // production
+    process.env.FRONTEND_URL || "http://localhost:5173",
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
@@ -37,8 +36,7 @@ app.use(cors({
 const io = new Server(server, {
   cors: {
     origin: [
-      "http://localhost:5173",
-      "https://trade-wise-frontend-qayqp6xt9-praveshkasliwals-projects.vercel.app"
+      process.env.FRONTEND_URL || "http://localhost:5173",
     ],
     methods: ["GET", "POST"],
     credentials: true
